@@ -1,0 +1,17 @@
+#map {
+    background-position: 0 0;
+}
+
+#hi-line {
+    grid-row-start: 1;
+    grid-row-end: 6;
+    align-self: stretch;
+    height: auto;
+    margin-top: -100vh;
+}
+
+#hidden-map {
+    margin-top: -68px;
+    /*this is seemingly random but is a product of the fact that when i did this in index.css */
+    /*it was done through scrolling to a certain pseudo-random point that ends up lining up wit 68px down from default*/
+}

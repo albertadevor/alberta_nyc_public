@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="robots" content="noindex">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>alberta.nyc</title>
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+    <!--Custom CSS -->
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/landing.css" rel="stylesheet">
+
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/hi.png" />
+
+</head>
+
+<body onresize="turnOnScrollingIfNeeded()">
+
+
+    <div id="toptop">
+
+        <h1 class="hidden-map">alberta.nyc</h1>
+        <br />
+        <h2 id="subtitle" class="hidden-map">Website Transit Map </h2>
+
+        <ul id="nav-bar" class="hidden-map">
+            <a href = "projects.html"><li>Projects</li></a>
+            <li>|</li>
+            <a href = "experience.html"><li>Experience</li></a>
+
+        </ul>
+       <!--  <div id="fade-in"></div> -->
+
+    </div>
+
+    <div id="map">
+
+        <!--Onload animations-->
+
+        <div class="header-div" id="hi-line"></div>
+        <div id="hidden-map">
+            <div id="hi-line-backup"></div> 
+            <!--  The backup is for small height screens for which the animation will be distorted-->
+
+            <img src="img/bottom-red-line.png" id="bottom-red-line"/>
+            <img src="img/short-purple-line.png" id="purple-line"/>
+            <div id="purple-line-bottom-container">
+                <div id="purple-line-bottom"></div>
+            </div>
+            
+            <!--Landing stop-->
+            <h4 id="stop-1a-label" class="red-line-label">
+                <a href="#" class="stop-label">
+                    Home Page <br>
+                    <span id="subtxt">(You are here!)</span>
+                </a>
+            </h4>
+            <a href="#" id ="stop-1a" class="stop"></a>
+
+            <!--Experience stop-->
+            <h4 id="stop-2a-label" class="red-line-label">
+                <a href="experience.html" class="stop-label">Experience & Education</a>
+            </h4>
+            <a id ="stop-2a" class="stop" href="experience.html"></a>
+
+            <!--Projects stop-->
+            <h4 id="stop-1b-label">
+                <a href="projects.html" class="stop-label">Projects</a>
+            </h4>
+            <a class="stop" id ="stop-1b" href="projects.html"></a>
+
+            <!--Let's Connect Section-->
+            <h4 id="stop-4a-label" class="red-line-label">Let's connect!</h4>
+
+            <a href="https://github.com/albertadevor" style="grid-row-start: 7; grid-column-start: 2;">
+                <img src="img/github.svg" id="gh-logo" class="connect-logo" />
+            </a>
+            <a style="grid-row-start: 7; grid-column-start: 5;">
+                <img src="img/linkedin.png" id="in-logo" class="connect-logo" />
+            </a>
+            <a href="https://twitter.com/albertadevs" style="grid-row-start: 7; grid-column-start: 3;">
+                <img src="img/twitter.png" id="twitter-logo" class="connect-logo" />
+            </a>
+
+            <a href="https://github.com/albertadevor" id= "github-label" class="connect-label"><h4>Github</h4></a>
+            <a id= "linkedin-label" class="connect-label"><h4>LinkedIn</h4></a>
+            <a href="https://twitter.com/albertadevs" id= "twitter-label" class="connect-label"><h4>Twitter</h4></a>
+
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>

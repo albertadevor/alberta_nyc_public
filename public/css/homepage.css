@@ -1,0 +1,24 @@
+/*Only for home page WITH animations*/
+
+
+/*This CSS File is just for the startup animations that occur on the homepage*/
+@import url('waving-animation-defintions.css');
+
+h1.hidden-map, h2.hidden-map , ul.hidden-map{
+    opacity: 0;
+}
+
+#wave {
+    width:40px;
+    height:40px;
+    -webkit-animation: waving 1s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation:  waving 1s; /* Firefox < 16 */
+    -ms-animation: waving 1s; /* Internet Explorer */
+    -o-animation: waving 1s; /* Opera < 12.1 */
+    animation: waving 1s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+#hidden-map {
+    margin-top: 90vh;
+}

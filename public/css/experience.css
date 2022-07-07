@@ -1,0 +1,375 @@
+#nav-bar {
+    list-style: none;
+    margin:0;
+    display: inline-block;
+    position: relative;
+    top:0;
+}
+
+/*blurry*/
+/*.experience-info {
+    color: transparent;
+    text-shadow: 0 0 15px #000;
+}*/
+
+#header-div {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+#header-div {
+    background-color: white;
+    top:0;
+    padding: 5px 15px 10px 20px;
+    border-color: #7d7d7d;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    z-index: 99;
+}
+
+.section-header {
+    text-align: center;
+}
+
+body {
+    display: block;
+    background-color: white;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+html {
+    margin: 0;
+    height: 100%;
+}
+
+#main {
+    display: grid;
+    grid-template: 1fr / 1fr 500px 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    left:0px;
+    bottom: 0;
+    overflow-y:auto;
+}
+
+#cards{
+    background: white;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    z-index: 1000;
+    height: calc(100vh - 51px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#google-map {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 10;
+    z-index: -1;
+}
+
+.card {
+    width: 500px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    background: red;
+    opacity: 0.5;
+}
+
+.card-body {
+    background-color: white;
+    width: 100%;
+    height: auto;
+    font-size: 17px;
+    padding: 40px;
+    padding-bottom: 30px;
+    color: #111;
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+    margin-top: 0px;
+    overflow: auto;
+}
+
+h3.dates {
+    font-size: 15px;
+    margin-bottom: 30px;
+    margin-left: 5px;
+}
+
+#hab {
+    width: 100%;
+}
+
+#map-table {
+    width: 150px;
+    display: inline-block;
+    float: left;
+}
+
+#hab-team {
+    text-align: right;
+    width: 260px;
+    display: inline-block;
+    float: right;
+}
+
+#hiking {
+    height: 140px;
+}
+
+#hashtag {
+    height: 140px;
+    float: right;
+}
+
+#jack {
+    width: 100%;
+}
+
+.pic_row {
+    margin-top: 15px;
+    text-align: center;
+    clear: both;
+}
+
+.cardimg{
+    display: inline-block;
+    position: relative;
+}
+
+.cardimg:hover .overlay {
+    bottom: 0;
+    height: 100%;
+}
+
+.overlay {
+    display: inline-block;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, .8);
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+}
+
+.text {
+
+    color: #113654;
+    font-size: 12px;
+    text-align: left;
+    position: absolute;
+    overflow: hidden;
+    bottom: 10%;
+    left: 5%;
+    right: 5%;
+}
+
+
+.main-body {
+    background: white;
+    position: relative;
+}
+
+section {
+    margin: 10px auto;
+    padding: 0 20px;
+    padding-bottom: 10px;
+    position: relative;
+    max-width: 600px;
+    padding-top: 50px;
+}
+
+.river {
+    padding: 0 30px 40px;
+    display: grid;
+    grid-template: 1fr / 70px 50px 1fr;
+    max-height:100px;
+    background: url("../img/river.png") no-repeat;
+    background-size: 700px auto;
+}
+
+.river-train-line {
+    z-index: 0;
+    height: 550px;
+    margin-top: 0;
+
+    width: 10px;
+    background-color: #9B51E0;
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+#header-1, #header-2, #header-3 {
+    padding: 10px 30px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.train-line {
+    width: 10px;
+    height: calc(100% + 150px);
+    background-color: #9B51E0;
+    z-index: -1;
+    margin-top:20px;
+    grid-column-start: 2;
+    grid-row-start: 1;
+
+    /*grid-column-start: 2;*/
+    /*grid-row-start: 1;*/
+    /*height:100%;*/
+    /*margin-left: 100px;*/
+}
+
+.train-line-end {
+    height: 10px;
+    width: 50px;
+    margin-left: -20px;
+    background-color: #9B51E0;
+    grid-column-start: 2;
+    grid-row-start:1;
+    align-self: end;
+}
+
+.train-line-end-start {
+    align-self: start;
+}
+
+#train-line-bottom-end {
+    align-self: end;
+}
+
+.experience-stop {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    width: 25px;
+    height: 25px;
+    border: 5px black solid;
+    margin-left: -13px;
+}
+
+.experience-entry {
+    display: grid;
+    grid-template: 1fr / 70px 50px 1fr;
+    padding: 100px 30px 60px;
+}
+
+#train-line-top-end {
+    margin-top: 0;
+    align-self: start;
+}
+
+#train-line-horizontal-top{
+    align-self: start;
+}
+
+.experience-info {
+    grid-row-start: 1;
+    grid-column-start: 3;
+}
+
+.experience-info h3 {
+    font-weight: normal;
+}
+
+.experience-info p {
+    margin: 40px 0;
+}
+
+.experience-info li p {
+    margin: 10px 0;
+}
+
+#last-entry {
+    grid-template: 1fr 1fr / 70px 50px 1fr;
+/*    padding: 100px 30px 60px;*/
+    margin-bottom: 100px;
+}
+
+#last-entry .train-line {
+    margin-top: -100px;
+    height: 120px;
+}
+
+.exp-footer {
+    text-align: center;
+    padding:20px;
+}
+.exp-footer a{
+    padding:5px;
+}
+
+#top-of-line-header {
+    height: 50px;
+    align-self: end;
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+#first-header {
+    color: black;
+    text-shadow: 0 0 0;
+    margin: -20px; /* Half of header size (50px) minus half of line width (10px)*/
+}
+
+@media screen and (max-width: 1000px) {
+    #cards {
+        /*TODO figure out how this should look responsive (when do we gt rid of the map)*/
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #cards {
+        grid-column-end: 9;
+        overflow-x: hidden;
+        background: rgb(255, 255, 255, 70%);
+    }
+
+    .experience-entry, .river, #last-entry {
+        padding: 10px 25px 60px 10px;
+        grid-template: 1fr / 25px 50px 1fr;
+    }
+
+    .river {
+        padding: 10px 0px 60px 10px;
+        background-size: 750px auto;
+    }
+
+    #header-1, #header-2, #header-3 {
+        padding: 50px 10px 90px;
+    }
+
+    #first-card {
+        padding-top: 150px;
+    }
+
+    #main {
+        grid-template: 1fr / 1fr 100% 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    #nanjing-card .train-line { /*last card has to be hard coded*/
+        height: calc(100% + 50px);
+    }
+}
+
+body {
+    overflow:visible;
+}
+
+@media screen and (max-width: 441px) {
+
+    .train-line {
+        margin-top: 40px;
+    }
+}

@@ -1,0 +1,140 @@
+/*WAVING ANIMATION DEFINITIONS*/
+
+@keyframes waving {
+    from {
+        transform: rotate(0deg);
+        transform-origin: right bottom;
+    }
+
+    20% {
+        transform: rotate(20deg);
+    }
+
+    40% {
+        transform: rotate(-20deg);
+    }
+
+    60% {
+        transform: rotate(20deg);
+    }
+
+    80% {
+        transform: rotate(-20deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes  waving {
+    from {
+        transform: rotate(0deg);
+        transform-origin: right bottom;
+    }
+
+    20% {
+        transform: rotate(20deg);
+    }
+
+    40% {
+        transform: rotate(-20deg);
+    }
+
+    60% {
+        transform: rotate(20deg);
+    }
+
+    80% {
+        transform: rotate(-20deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes waving {
+    from {
+        transform: rotate(0deg);
+        transform-origin: right bottom;
+    }
+
+    20% {
+        transform: rotate(20deg);
+    }
+
+    40% {
+        transform: rotate(-20deg);
+    }
+
+    60% {
+        transform: rotate(20deg);
+    }
+
+    80% {
+        transform: rotate(-20deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* Internet Explorer */
+@-ms-keyframes waving {
+    from {
+        transform: rotate(0deg);
+        transform-origin: right bottom;
+    }
+
+    20% {
+        transform: rotate(20deg);
+    }
+
+    40% {
+        transform: rotate(-20deg);
+    }
+
+    60% {
+        transform: rotate(20deg);
+    }
+
+    80% {
+        transform: rotate(-20deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes waving {
+    from {
+        transform: rotate(0deg);
+        transform-origin: right bottom;
+    }
+
+    20% {
+        transform: rotate(20deg);
+    }
+
+    40% {
+        transform: rotate(-20deg);
+    }
+
+    60% {
+        transform: rotate(20deg);
+    }
+
+    80% {
+        transform: rotate(-20deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}

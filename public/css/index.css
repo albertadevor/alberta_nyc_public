@@ -1,0 +1,386 @@
+#map {
+    box-sizing: border-box; /*prevents overflow*/
+    background: #fff url("../img/map-bg.png") no-repeat;
+    width: 100%;
+
+    background-size: 100%;
+    /*border-top: 5px #333 solid;*/
+    margin:0 auto;
+    padding:0;
+    background-origin: border-box;
+    margin-top: 30px;
+    padding-top: 30px;
+    background-position: 0 calc(100vh);
+    background-repeat: no-repeat;
+}
+
+#map, #hidden-map {
+    height: calc(100vh - 130px);
+    display: grid;
+    grid-template-columns: 3.5fr 100px 30px 65px 65px 25px 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 82px 82px 1fr .5fr 70px 40px 70px;
+    min-height: 0;
+    min-width: 0;
+
+}
+
+#toptop {
+    padding-top:20px;
+    padding-left: 20px;
+    background: white;
+    z-index: 1;
+}
+
+#hidden-map {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 20;
+    grid-column-end: 20;
+    display: grid;
+
+}
+
+#nav-bar, #more-links {
+    list-style: none;
+    top: 40px;
+    right: 10px;
+    display: inline-block;
+}
+
+
+#nav-bar li, #more-links h2 {
+    display: inline-block;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    padding: 0;
+    margin:0;
+    width:100%;
+    height: 100%;
+    overflow: hidden; /*we change this after the animation*/
+    position: relative;
+}
+
+h1, h2, h3, h4, p, li {
+    font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+h2 {
+    font-weight: normal;
+}
+
+h4 {
+    margin-left: 6px;
+    margin-top: 6px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h3 {
+    font-size: 1.3em;
+}
+
+#about-me{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    padding: 10px;
+    margin: 10px;
+    display: none;
+}
+
+
+/* TRAIN STOP STYLING HERE */
+.stop {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    border: 5px #333 solid;
+    z-index: 50;
+}
+
+#subtxt {
+    font-weight: normal;
+}
+
+.red-line-label {
+    text-align: right;
+    padding-right: 5px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.stop-label:link {
+    text-decoration: none;
+    text-align: right;
+}
+
+a:link:not(.reg_link), a:visited:not(.reg_link) {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Repetitive but necessary styling that allows hover over text to highlight stop circle*/
+#stop-1a-label:hover + #stop-1a {
+    background: #696969;
+}
+
+#stop-2a-label:hover + #stop-2a {
+    background: #696969;
+}
+
+#stop-3a-label:hover + #stop-3a {
+    background: #696969;
+}
+
+#stop-1b-label:hover + #stop-1b {
+    background: #696969;
+}
+
+
+/*If a stop circle (not text) is highlighted, it should also visually highlight */
+.stop:hover {
+    background: #696969;
+}
+
+#stop-1a {
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+#stop-1a-label {
+    grid-row-start: 2;
+}
+
+#stop-2a {
+    grid-column-start: 3;
+    grid-row-start: 3;
+}
+
+#stop-2a-label {
+    grid-row-start: 3;
+}
+
+#stop-3a {
+    grid-column-start: 3;
+    grid-row-start: 5;
+}
+
+#stop-3a-label {
+    grid-row-start: 5;
+}
+
+#stop-4a-label {
+    grid-row-start: 6;
+}
+
+#stop-1b {
+    grid-column-start: 6;
+    grid-row-start: 5;
+    margin-left: -3px;
+}
+
+#stop-1b-label {
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 5;
+}
+
+#hi-line {
+    width: 10px;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    margin-top: calc(50vh - 110px);
+    height:calc(150vh - 230px);
+    align-self: stretch;
+}
+
+#hi-line-backup {
+    grid-column-start: 3;
+    grid-row-start: 2;
+    grid-row-end: 7;
+    align-self: stretch;
+    height: auto;
+}
+
+#hi-line, #red-line, #hi-line-backup {
+    justify-self: center;
+    background: #EB5757;
+    width: 10px;
+}
+
+#bottom-red-line {
+    width: 210px;
+    grid-column-start: 2;
+    grid-row-start: 6;
+    padding: 10px;
+    height: 70px;
+}
+
+#purple-line { /*top short purple line*/
+    grid-column-start: 3;
+    grid-row-start: 2;
+    grid-row-end: 7;
+    padding-top: 25px;
+    margin-left: 15px;
+    width: 160px; /*height is 163px */
+}
+
+#purple-line-bottom {
+    width: 9px;
+    background-color: #9B56DE;
+    margin-left: -9px;
+    height: 100%;
+}
+
+#purple-line-bottom-container {
+    grid-column-start: 3;
+    grid-row-start: 2;
+    grid-row-end: 7;
+    padding-top: 164px; 
+    /*82 + 82 of the two grid rows above guarantee purple straight line to start here */
+    margin-left: 175px; /* 15 + the 160 width*/
+    height: 100%;
+}
+
+#gh-logo, #github-label {
+    grid-column-start: 2;
+}
+
+#in-logo, #linkedin-label {
+    grid-column-start: 5;
+}
+
+#twitter-logo, #twitter-label {
+    grid-column-start: 3;
+    margin-left: -5px;
+}
+
+#twitter-label {
+    margin-left: -12px;
+}
+
+.header-text {
+    display: inline-block;
+    grid-column-start: 3;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-top: calc(50vh - 120px);
+}
+
+#alb {
+    grid-column-start: 4;
+    padding: 10px;
+    align-self: flex-start;
+    margin-top: calc(50vh - 145px);
+
+}
+
+.connect-logo {
+    width: 40px;
+    height: 40px;
+}
+
+.connect-label {
+    grid-row-start: 8;
+    margin-left: -15px;
+}
+
+
+#nav-bar {
+    position: absolute;
+}
+
+h1.hidden-map, h2.hidden-map , ul.hidden-map{
+    z-index: 100;
+    position: relative;
+    background-color: rgba(255,255,255,0.8);
+}
+
+h1.hidden-map, h2.hidden-map{
+    display: inline-block;
+}
+#fade-in {
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    height: 120px;
+    background: linear-gradient(to bottom, white, rgba(255,255,255,0));
+    z-index: 30;
+
+}
+
+#fade-out {
+    position: absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    height: 60px;
+    background: linear-gradient(to top, white, rgba(255,255,255,0));
+    z-index: 30;
+
+}
+
+/* mobile or small screen styling */
+@media only screen and (max-width : 500px) {
+    #map {
+        background-image: url("../img/mobile-map-bg.png");
+        background-size: cover;
+        padding-top:100px;
+    }
+
+    #map, #hidden-map {
+        grid-template-rows:  5px 1fr 1fr 1fr 1fr 70px 40px 105px;
+        grid-template-columns: 5px 100px 30px 65px 65px 25px 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    footer {
+        grid-row-start: 9;
+        margin-top: 0;
+    }
+
+    #gh-logo, #github-label {
+        margin-left: 2px;
+    }
+
+    #hi-line {
+        margin-top: calc(50vh - 150px);
+    }
+
+    .header-text {
+        margin-top: calc(50vh - 160px);
+    }
+
+    #alb {
+        margin-top: calc(50vh - 185px);
+    }
+
+    #nav-bar {
+        display: none;
+    }
+
+    /*moves label for more compact viewing*/
+    #stop-1b-label {
+        grid-column-start: 4;
+        grid-column-end: 6;
+        text-align: right;
+        margin-right: 2px;
+        margin-left: 30px;
+        margin-right: 5px;
+    }
+
+
+}

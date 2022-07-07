@@ -1,0 +1,331 @@
+body {
+    overflow-y:visible;
+}
+
+/*blurry*/
+/*.prj {
+    color: transparent;
+    text-shadow: 0 0 15px #000;
+}*/
+
+#nav-bar {
+    list-style: none;
+    margin:0;
+    display: inline-block;
+    position: relative;
+    top:0;
+    right:10px;
+}
+
+#header-div {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+#header-div {
+    background-color: white;
+    top:0;
+    padding: 5px 15px 10px 20px;
+    border-color: #7d7d7d;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    z-index: 99;
+    position:fixed;
+    width:100%;
+    z-index:100;
+    box-sizing: border-box;
+}
+
+.exp-footer {
+    text-align: center;
+    padding:20px;
+}
+.exp-footer a{
+    padding:5px;
+}
+
+#main {
+    display: grid;
+    grid-template: 400px 1fr 1fr 1fr 1fr 1fr 1fr 200px/ 50px 20px 1fr 20px 50px;
+}
+
+#projects-header {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    max-width: 350px;
+    text-align: left;
+    justify-self: left;
+    padding: 30px;
+    margin-top:40px;
+}
+
+#projects-purple-top {
+    grid-column-start: 4;
+    grid-row-start: 1;
+    justify-self: flex-end;
+    width: calc(100vw - 70px);
+    margin-top: 150px; /* space up top*/
+}
+
+#projects-purple-top-straight-line {
+    background: #9B51E0;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    height: 150px;
+    margin-left: -30px;
+}
+
+#projects-purple-bottom-straight-line {
+    background: #9B51E0;
+    grid-column-start: 4;
+    margin-top: 870px;
+    align-self: stretch; /*fills entire col*/
+    grid-row-start: 1;
+    grid-row-end:11;
+    margin-left:7px;
+    justify-self: flex-end;
+}
+
+
+.prj-line {
+    width:calc((100vw - 70px)/90); /*width is based on size of the purple line img width*/
+}
+
+#projects-red-top {
+    background: #EB5757;
+    align-self: stretch; /*fills entire col*/
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end:10;
+
+}
+
+.prj p {
+    margin-top: 20px;
+}
+
+.prj {
+    justify-self: stretch;
+    align-items: center;
+    align-self: flex-start;
+}
+
+.stop {
+    align-self: center;
+}
+
+.stop:hover {
+    background: white;
+}
+
+.stop-left {
+    grid-column: 2;
+    margin-left: -10px;
+}
+
+.stop-right {
+    grid-column: 4;
+}
+
+.project-icon {
+    max-width:300px;
+    max-height:300px;
+    align-self: center;
+}
+
+.prj-left {
+    grid-column-start: 3;
+    flex-flow: row;
+}
+
+.prj-right {
+    grid-column-start: 3;
+    flex-flow: row-reverse;
+}
+
+.prj-right h1, .prj-right p {
+    text-align: right;
+}
+
+.prj{
+    display: flex;
+    padding: 20px 50px 0px;
+}
+
+.prj .word-desc {
+    padding: 0px 20px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.project-description {
+    display: none;
+}
+
+#aggy-app, #stop-0p {
+    grid-row-start: 2;
+}
+
+#two-sided, #stop-1p {
+    grid-row-start: 3;
+}
+
+#courseler, #stop-2p {
+    grid-row-start: 4;
+}
+
+#table, #stop-3p {
+    grid-row-start: 5;
+}
+
+#img-recognition, #stop-4p {
+    grid-row-start: 6;
+}
+
+#furniture, #stop-5p {
+    grid-row-start: 7;
+}
+
+#last {
+    grid-row-start: 8;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.gh-logo  {
+    width: 20px;
+    height: 20px;
+}
+
+.apple-logo {
+    width: 15px;
+    height: 20px;
+}
+
+#courseler-mockup, #img-recog-mockup {
+    max-width:350px;
+    max-height: 350px;
+}
+
+.see-more {
+    margin-top: 10px;
+    width: 80px;
+    border: 1px #676767 solid;
+    border-radius: 3px;
+    display: flex;
+    align-items:center;
+    padding: 6px;
+    justify-content: space-evenly;
+    background: #333;
+    z-index: 99; /*This is the only way to get onClick to work lol */
+    cursor: pointer;
+}
+
+.see-more-right {
+    flex-flow: row-reverse;
+    align-self: flex-end;
+}
+
+.see-more-right img {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+.see-more p {
+    margin-top: 0;
+    color: white;
+}
+
+.see-more-arrow {
+    height: 12px;
+    width:18px;
+}
+
+
+/* mobile or small screen styling */
+@media only screen and (max-width : 800px) {
+
+    .project-icon {
+        max-width: 170px;
+    }
+
+    #projects-purple-top {
+        content: url("../img/mobile-purple-top-project.png");
+    }
+
+    .prj-line {
+        width: calc((100vw - 70px)/45);
+    }
+
+    #projects-purple-top-straight-line {
+        margin-left: -10px;
+        height:calc(380px - 26vw); /* Some fun pseudo science! */
+    }
+
+    #projects-purple-top {
+        margin-top: calc(380px - 26vw); /* Some fun pseudo science! */
+        width: calc(100vw - 20px);
+    }
+
+    .prj {
+        flex-flow:column wrap;
+        padding: 50px 20px 0px;
+        max-width: calc(100vw - 110px);
+    }
+
+    .prj .word-desc {
+        width: 100%;
+        padding: 0 0 20px;
+    }
+
+    .prj h1, .prj p {
+        text-align: center;
+    }
+
+    .see-more, .see-more-right {
+        align-self: center;
+    }
+
+    .see-more-right{
+        flex-flow: row;
+    }
+
+    .see-more-right img {
+        -moz-transform: scaleX(1);
+        -o-transform: scaleX(1);
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+        filter: none;
+        -ms-filter: none;
+    }
+
+    #projects-purple-bottom-straight-line {
+        margin-top:600px;
+        margin-left: 13px;
+    }
+
+    #courseler-mockup, #img-recog-mockup {
+        max-width:250px;
+        max-height: 250px;
+    }
+
+    #main {
+        grid-template: 300px / 15px 20px 1fr 20px 15px;
+    }
+
+    .top-prj {
+        padding-top:70px;
+    }
+
+    #projects-header {
+        text-align: center;
+        justify-self: center;
+    }
+
+}

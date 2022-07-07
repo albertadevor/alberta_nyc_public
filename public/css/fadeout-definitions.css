@@ -1,0 +1,79 @@
+/*Fadeout defintions*/
+
+
+@keyframes fadeout {
+    0% {
+        opacity: 1;
+        display: inline-block;
+    }
+    50% {
+        opacity: 1;
+        display: inline-block;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes fadeout {
+    0% {
+        opacity: 1;
+        display: inline-block;
+    }
+    50% {
+        opacity: 1;
+        display: inline-block;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeout {
+    0% {
+        opacity: 1;
+        display: inline-block;
+    }
+    50% {
+        opacity: 1;
+        display: inline-block;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+/* Internet Explorer */
+@-ms-keyframes  fadeout {
+    0% {
+        opacity: 1;
+        display: inline-block;
+    }
+    50% {
+        opacity: 1;
+        display: inline-block;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadeout {
+    0% {
+        opacity: 1;
+        display: inline-block;
+    }
+    50% {
+        opacity: 1;
+        display: inline-block;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}

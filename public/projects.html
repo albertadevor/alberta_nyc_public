@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>alberta.nyc: projects</title>
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <!--Custom CSS -->
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/projects.css" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/hi.png" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/projects.js"></script>
+</head>
+
+
+<body>
+<div id="header-div">
+    <div class="left-header">
+        <a href="landing.html"><h2>alberta.nyc</h2></a>
+    </div>
+</div>
+
+<div id="main">
+
+    <div id="projects-header">
+        <h1>Projects</h1>
+        <br>
+        <h3 style="font-weight: normal;">Selected projects from school, hackathons, and my free time.
+            Mix of software, experience design, and hardware focused work.</h3>
+    </div>
+    <div id="projects-purple-top-straight-line" class="prj-line"></div>
+    <img src="img/project-purple-top.png" id="projects-purple-top"/>
+    <div class="prj-line" id="projects-red-top"></div>
+    <div id="projects-purple-bottom-straight-line" class="prj-line"></div>
+
+
+    <div class="stop stop-left" id="stop-0p"></div>
+
+
+    <div class="prj prj-left top-prj" id="aggy-app">
+
+        <img id ="aglet-mockup" class = "project-icon" src = "img/aggy_app_screens.jpg">
+        <div class="word-desc">
+            <h1>Aglet: Make healthy habits
+            </h1>
+            <div class="see-more more" onclick="iconClicked('aggy-desc', this)">
+                <p>More</p><img src="img/right-arrow.png" class="see-more-arrow" />
+            </div>
+            <div class="project-description" id="aggy-desc">
+                <p>Created iOS & Android React Native app in a cross-diciplinary team through startup focused course.</p>
+
+                <p><b>
+
+                <a href=https://itunes.apple.com/US/app/id1376363644?mt=8">
+
+                View on Apple app store (no longer maintained): <img src="img/apple_icon.png" class="apple-logo" />
+
+                </a>
+
+                </b></p>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="stop stop-right" id="stop-1p"></div>
+
+
+    <div class="prj prj-right" id="two-sided">
+
+        <img id ="two-sided-mockup" class = "project-icon" src = "img/two-sided-mockup.png">
+        <div class="word-desc">
+            <h1>Two Sided News
+            </h1>
+            <div class="see-more more see-more-right" onclick="iconClicked('two-sided-p', this)">
+                <p>More</p><img src="img/right-arrow.png" class="see-more-arrow" />
+            </div>
+            <div class="project-description" id="two-sided-p">
+                <p> 1st Place winner of Social Impact Award, Hack@Brown 2017</p>
+
+                <p> Developed web app and chrome extension to display an opposing view of a user selected news article with Bootstrap and Javascript.</p>
+
+                <p><b>
+
+                    <a href="https://github.com/albertadevor/twosidednews">
+
+                        View on Github: <img src="img/github.svg" class="gh-logo" />
+
+                    </a>
+
+                    |
+
+                    <a href="https://devpost.com/software/twosidednews">
+
+                        View on Devpost: <img src="img/devpost.png" class="gh-logo" />
+
+                    </a>
+
+                    |
+
+                    <a href="https://devpost.com/software/twosidednews">
+
+                        View on Google Chrome Store: <img src="img/chrome.png" class="gh-logo" />
+
+                    </a>
+
+                </b></p>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="stop stop-left" id="stop-2p" ></div>
+
+    <div class="prj prj-left" id="courseler">
+        <img class = "project-icon" id ="courseler-mockup" src = "img/courseler_mockup.png">
+        <div class="word-desc" >
+            <h1>Courseler </h1>
+            <div class="see-more more" onclick="iconClicked('courseler-p', this)">
+                <p>More</p><img src="img/right-arrow.png" class="see-more-arrow" />
+            </div>
+            <div class="project-description" id="courseler-p">
+                <p> Uses an algorithm to personalize course recommendations for Brown students. </p>
+
+                <p>Worked with Spark, React JS, Java, and SQL to design a responsive and interactive user experience.</p>
+
+                <p> Created with a team for final project in Spring 2017 Software Engineering course (CS32).</p>
+
+                <a href="https://github.com/amywinkler/courseler">
+                    <p><b>
+                        View on Github: <img src="img/github.svg" class="gh-logo" />
+                    </b></p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="stop stop-right" id="stop-3p"></div>
+    <div class="prj prj-right" id="table">
+
+        <img id ="map-table" class = "project-icon" src = "img/map-table.png">
+        <div class="word-desc"  id="table-desc">
+            <h1>Unforget-<em>table</em>
+            </h1>
+            <div class="see-more more see-more-right" onclick="iconClicked('table-p', this)">
+                <p>More</p><img src="img/right-arrow.png" class="see-more-arrow" />
+            </div>
+            <div class="project-description" id="table-p">
+                <p>Analyzes Google Maps location history of two users and projects overlaps onto a physical table. </p>
+                <p> Worked with Javascript, jQuery, Leaflet.js, Firebase, Google Locations API, and Rasberry Pi.</p>
+
+                <p> Created with a team for final project in Fall 2016 "Designing Humanity Centered Robots" Course (CS1951C).</p>
+
+                <a href="https://github.com/albertadevor/unforgettable">
+                    <p><b>
+                        View on Github: <img src="img/github.svg" class="gh-logo" />
+                    </b></p>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="stop stop-left" id="stop-4p" ></div>
+    <div class="prj prj-left" id="img-recognition">
+        <img class = "project-icon" id ="img-recog-mockup" src = "img/img-recognition-mockup.png">
+        <div class="word-desc" >
+            <h1>Poket Watch: Image Recognition</h1>
+            <div class="see-more more" onclick="iconClicked('recog-p', this)">
+                <p>More</p><img src="img/right-arrow.png" class="see-more-arrow" />
+            </div>
+            <div class="project-description" id="recog-p">
+                <p>This DragonHacks 2018 submission utilizes deep learning to help the visually impaired identify their surroundings. </p>
+
+                <p>Worked with React Native, Python, Microsoft Cognitive Services API, Tensorflow.</p>
+
+                <p><b>
+                <a href="https://github.com/albertadevor/Image-Recognition-App">
+
+                        View on Github: <img src="img/github.svg" class="gh-logo" />
+
+                </a>
+
+                    |
+                    <a href="http://devpost.com/software/poket-watch">
+
+                        View on Devpost: <img src="img/devpost.png" class="gh-logo" />
+
+                    </a>
+
+                </b></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="stop stop-right" id="stop-5p"></div>
+    <div class="prj prj-right" id="furniture">
+
+        <img id ="furniture-app" class = "project-icon" src = "img/feather.png">
+        <div class="word-desc"  id="furniture-desc">
+            <h1>Feather Redesign</h1>
+            </h1>
+            <div class="see-more more see-more-right" onclick="iconClicked('furniture-p', this)">
+                <p>More</p><img src="img/right-arrow.png" class="see-more-arrow" />
+            </div>
+            <div class="project-description" id="furniture-p">
+
+                <a href="https://medium.com/@alberta.devor/designing-a-mobile-app-for-a-furniture-rental-startup-85d2d5669c41">
+
+                    <p>Designed a furniture rental startup's mobile site for CS1300 (User Interfaces/User Experience)
+                        in Fall 2017.</p>
+
+                    <p>Worked with a group using Figma.</p>
+                    <p><b>
+                        View on Medium: <img src="img/medium-logo.png" class="gh-logo" />
+                    </b></p>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="last">
+
+
+        <div class="exp-footer">
+            <a href="https://github.com/albertadevor" >
+                <img src="img/github.svg" id="gh-logo" class="connect-logo" />
+            </a>
+            <a >
+                <img src="img/linkedin.png" id="in-logo" class="connect-logo" />
+            </a>
+            <a href="https://twitter.com/albertadevs">
+                 <img src="img/twitter.png" id="twitter-logo" class="connect-logo" />
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+</body>
+
+
